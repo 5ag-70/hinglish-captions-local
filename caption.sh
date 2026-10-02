@@ -92,6 +92,7 @@ fi
 echo "Transcribing..."
 if ! whisper "$audio" \
     --model large-v3 \
+    --device cpu \
     --fp16 False \
     --threads 8 \
     --output_dir "$original_caption_dir" \
