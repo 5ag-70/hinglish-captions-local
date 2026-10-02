@@ -18,7 +18,6 @@ if [[ ! -f "$filename" ]]; then
     exit 1
 fi
 
-source "${VENV_DIR:-$HOME/.pyenv/versions/openai}/bin/activate"
 set -uo pipefail
 
 for tool in ffmpeg whisper python; do
